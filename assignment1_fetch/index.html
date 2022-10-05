@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="indexController.js"></script>
+    <title>Consume API Through fetch</title>
+</head>
+<style>
+    .content {
+        max-width: 500px;
+        margin: auto;
+    }
+</style>
+<body>
+<div class="content">
+<div class="content">
+    <h1>Weather Report</h1>
+    <a>Consume API Through fetch</a>
+    <br>
+    <br>
+    <label for="dropdown_menu">Choose a city:</label>
+    <br>
+    <select name="dropdown_menu" id="dropdown_menu">
+        <option value="Aarhus">Aarhus</option>
+        <option value="Copenhagen">Copenhagen</option>
+        <option value="Horsens">Horsens</option>
+    </select>
+    <button id="loadData">Load</button>
+    <br>
+    <br>
+
+    <div>
+        <label for="next24hours">Hourly forecast for the next 24 hours</label>
+        <br>
+        <br>
+        <table id="next24hours">
+            <tbody>
+            </tbody>
+        </table>
+        <br>
+        <label for="latestMeasEach">Latest Weather Data</label>
+        <br>
+        <br>
+        <table id="latestMeasEach">
+            <tbody>
+            </tbody>
+        </table>
+        <br>
+        <label for="minTemp">Minimum Temperature for the last day: </label>
+        <br>
+        <span id="minTemp"></span>
+        <br>
+        <label for="maxTemp">Maximum Temperature for the last day: </label>
+        <br>
+        <span id="maxTemp"></span>
+        <br>
+        <label for="precipitationTotal">Total Precipitation for the last day: </label>
+        <br>
+        <span id="precipitationTotal"></span>
+        <br>
+        <label for="windSpeedAvg">Average Wind Speed for the last day: </label>
+        <br>
+        <span id="windSpeedAvg"/>
+        <br>
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="index_post.js"></script>
+    <title>Post Data to endpoint through Fetch</title>
+</head>
+<style>
+  .content {
+    max-width: 500px;
+    margin: auto;
+  }
+</style>
+<body>
+  <div class="content">
+    <label for="value">Value:</label>
+    <input type="text" id="value" name="value"><br><br>
+    <a>Value Could be anything</a>
+    <br><br>
+    <label for="type">Type:</label>
+    <input type="text" id="type" name="type"><br><br>
+    <a>Type is {temperature, precipitation, wind speed, cloud coverage}</a>
+    <br><br>
+    <label for="unit">Unit :</label>
+    <input type="text" id="unit" name="unit"><br><br>
+    <a>Unit is {C, mm, m/s, %}</a>
+    <br><br>
+    <label for="place">Place :</label>
+    <input type="text" id="place" name="place"><br><br>
+    <a>Place is {Aarhus, Copenhagen, Horsens}</a>
+    <br><br>
+    <button id="sendData">Send</button>
+  </div>
+</body>
+</html>
